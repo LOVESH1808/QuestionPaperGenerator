@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <style>
+            .myForm1{
+                width: 40%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 20px;
+                font-size: 20px;
+            }
+            .buttonss
+            {
+                width:100%;
+                text-align: center;
+                display:flex;
+                justify-content: center;
+                padding-top: 1%;
+            }
+            #myForm table tr td input{
+                font-size: 20px;
+            }
+            h1 {
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+            button {
+                width: 200px;
+                padding: 15px;
+                cursor: pointer;
+                background-color: #2c3639;
+                outline: none;
+                border: 3px solid white;
+                color: #dcd7c9;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #3f4e4f;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>ADD QUESTION</h1>
+            
+            <form id="myForm" class="myForm1" method="post" action="objects">
+                <table>
+                    <tr>
+                        <td>QUESTION :</td>
+                        <td> <input type="text" id="abc" name="user_question" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>SUBJECT :</td>
+                        <td> <input type="text" name="user_subject" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>TOPIC :</td>
+                        <td> <input type="text" name="user_topic" placeholder="Enter Here " /></td>
+                    </tr>
+                    <tr>
+                        <td>MARKS :</td>
+                        <td> <input type="number" name="user_marks" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Select your Difficulty
+                        </td>
+                        <td>
+                            <select name="user_difficulty">
+                                <option value="Easy">Easy</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Hard">Hard</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button type="submit">Add</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="buttonss">
+                <form action="clear" method="post">
+                    <button type="submit">Reset</button>
+                </form>
+                <form action="show" method="post">
+                    <button type="submit">Show questions</button>
+                </form>
+                <form id="create" action="create" method="post">
+                    <button type="submit">Create question paper</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

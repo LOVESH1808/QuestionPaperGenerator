@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+        <style>
+            .myForm1{
+                width: 40%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 20px;
+                font-size: 20px;
+            }
+            .buttonss
+            {
+                width:100%;
+                text-align: center;
+                display:flex;
+                justify-content: center;
+                padding-top: 1%;
+            }
+            #myForm table tr td input{
+                font-size: 20px;
+            }
+            h1 {
+                padding-top: 2%;
+                padding-bottom: 2%;
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+            button {
+                width: 200px;
+                padding: 15px;
+                cursor: pointer;
+                background-color: #2c3639;
+                outline: none;
+                border: 3px solid white;
+                color: #dcd7c9;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #3f4e4f;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>CREATE QUESTION PAPER</h1>
+            
+            <form id="myForm2" class="myForm1"  method="post" action="qpapers">
+                <table>
+                    <tr>
+                        <td>TOTAL MARKS :</td>
+                        <td> <input type="number" name="user_totalMarks" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>Easy marks :</td>
+                        <td> <input type="number" name="user_EasyMarks" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>Medium marks :</td>
+                        <td> <input type="number" name="user_MediumMarks" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>Hard marks :</td>
+                        <td> <input type="number" name="user_HardMarks" placeholder="Enter Here " /> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Select your Difficulty in Percentage
+                        </td>
+                        <td>
+                            <tr>
+                                <td>Easy :</td>
+                                <td> <input type="number" name="Easy"   placeholder="0%" /> </td>
+                            </tr>
+                            <tr>
+                                <td>Medium :</td>
+                                <td><input type="number" name="Medium"  placeholder="0%" /> </td>
+                            </tr>
+                            <tr>
+                                <td>Hard :</td>
+                                <td><input type="number" name="Hard"  placeholder="0%" /> </td>
+                            </tr>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button type="submit">Create</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+    </body>
+</html>
